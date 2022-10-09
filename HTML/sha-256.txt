@@ -1,0 +1,8 @@
+SHA 256 follows the steps given below:
+
+    First, data is converted into binary. Binary code uses 0s and 1s to store information. For example, the letter ‘a’ is written as ‘01000001’ in this basic computer language.
+    The binary data is divided into blocks of 512 bits. If the block is smaller than 512, it’ll be expanded to that size by adding bits of “padding.” If it’s larger, it’ll be broken into blocks of 512 bits. (If the last block isn’t exactly 512 bits, padding is added to the last block to make it 512 bits.)
+    The message is further divided into smaller blocks that are 32 bits each.
+    Sixty-four iterations (rounds) of compression functions are performed, wherein the hash values generated above are rotated in a specific pattern and additional data gets added.
+    New hash values are created from the output of the previous operations.
+    In the last round, one final 256-bit hash value is produced — this hash digest is the end product of SHA 256.
