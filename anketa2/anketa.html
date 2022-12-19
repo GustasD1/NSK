@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>Anketa</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Asmeniniai duomenys</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Vardas</label>
+                            <input type="text" id="vardas" placeholder="Įveskite vardą" required>
+                        </div>
+                        <div class="input-field" >
+                            <label>Antrasis Vardas</label>
+                            <input type="text" id="vardas2" placeholder="Įveskite antrąjį vardą" >
+                        </div>
+                        <div class="input-field" >
+                            <label>Pavardė</label>
+                            <input type="text" id="pavarde" placeholder="Įveskite pavardę" required>
+                        </div>
+                        <div class="input-field" >
+                            <label>Ankstesnė pavardė</label>
+                            <input type="text"  id="pavarde2" placeholder="Įveskite ankstesnę pavardę" >
+                        </div>
+                        <div class="input-field">
+                            <label>Lytis</label>
+                            <select required id="lytis">
+                                <option disabled selected>Pasirinkite lytį</option>
+                                <option>Vyras</option>
+                                <option>Moteris</option>
+                            </select>
+                        </div>
+                        <div class="input-field" >
+                            <label>Gimimo data</label>
+                            <input type="date" id="gimimas" placeholder="Įveskite gimimo datą" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <div class="fields">
+                        <div class="input-field" >
+                            <label>Asmens kodas</label>
+                            <input type="number" id="asmens" placeholder="Įveskite asmens kodą" required>
+                        </div>
+                        <div class="input-field" >
+                            <label>Telefono numeris</label>
+                            <input type="number" id="numeris" placeholder="Įveskite telefono numerį" required>
+                        </div>
+                        <div class="input-field" >
+                            <label>El. pašto adresas</label>
+                            <input type="text" id="pastas" placeholder="Įveskite savo el. pašto adresą" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Adresas</label>
+                            <input type="text"  id="adresas" placeholder="Įveskite savo adresą" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Kiti kontaktai</label>
+                            <input type="text" id="kontaktai" placeholder="Pridėkite kitus kontaktus" >
+                        </div>
+                        <div class="input-field">    
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Šeimyninė padėtis</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Vedybinė padėtis</label>
+                            <select required id="santuoka">
+                                <option disabled selected>Pasirinkite savo vedybinę padėtį</option>
+                                <option>Nevedęs/netekėjusi</option>
+                                <option>Vedęs/ištekėjusi</option>
+                                <option>Išsiskyręs/išsiskyrusi</option>
+                            </select>
+                        </div>
+                        <div class="input-field" id="test" style="display: none" >
+                            <label>Partnerio/ės vardas pavardė</label>
+                            <input type="text" id="test3" placeholder="Įveskite partnerio/ės vardą pavardę" required>
+                        </div>
+                        <div class="input-field" id="test2" style="display: none" >
+                            <label>Asmens kodas</label>
+                            <input type="number" id="test4" placeholder="Įveskite asmens kodą" required>
+                        </div>
+                        <div class="input-field" id="vaikai" style="display: none" >
+                            <label>Vaikų skaičius</label>
+                            <input type="number"  id="skaitmuo" placeholder="Įveskite vaikų skaičių šeimoje" required>
+                        </div>
+                        <div class="input-field" id="vaik" style="display: none" >
+                            <label>Vaiko vardas, pavardė</label>
+                            <input type="text"  id="vaik4"  placeholder="Įveskite vaiko vardą pavardę" required>
+                        </div>
+                        <div class="input-field" id="vaik2" style="display: none" >
+                            <label>Vaiko vardas, pavardė</label>
+                            <input type="text" id="vaik5" placeholder="Įveskite vaiko vardą pavardę" required>
+                        </div>
+                        <div class="input-field" id="vaik3" style="display: none" >
+                            <label>Vaiko vardas, pavardė</label>
+                            <input type="text"  id="vaik6" placeholder="Įveskite vaiko vardą pavardę" required>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Karjeros detalės</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Profesinė padėtis</label>
+                            <select required id="padetis">
+                                <option disabled selected>Pasirinkite savo profesinę padėtį</option>
+                                <option>Studijuoja</option>
+                                <option>Dirba</option>
+                                <option>Nedirba</option>
+                                <option>Motinystės/tėvystės atostogos</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field" id="stud" style="display: none" >
+                            <label>Studijų pakopa</label>
+                            <input type="text" id="stud4" placeholder="Įveskite studijų pakopą" required>
+                    </div>
+                    <div class="input-field" id="stud2" style="display: none" >
+                        <label>Kursas</label>
+                        <input type="text" id="stud5" placeholder="Įveskite kursą" required>
+                </div>
+                <div class="input-field" id="stud3" style="display: none" >
+                    <label>Įstaiga kurioje mokotės</label>
+                    <input type="text" id="stud6" placeholder="Įveskite Įstaigą" required>
+            </div>
+            <div class="input-field" id="darb" style="display: none" >
+                <label>Darbo Įstaiga</label>
+                <input type="text" id="darb6" placeholder="Įveskite darbo įstaigą" required>
+        </div>
+        <div class="input-field" id="darb2" style="display: none" >
+            <label>Pareigos</label>
+            <input type="text" id="darb7" placeholder="Įveskite savo pareigas" required>
+    </div>
+    <div class="input-field" id="nedarb" style="display: none" >
+        <label>Nedarbo priežastis</label>
+        <input type="text"  id="nedarb2" placeholder="Įveskite nedarbo priežastį" required>
+</div>
+<div class="input-field" id="atostogos" style="display: none" >
+    <label>Atostogų pradžia</label>
+    <input type="date" id="atostogos2" placeholder="pažymėkite atostogų pradžia" required>
+</div>
+<div class="input-field" id="darb4"  style="display: none" >
+    <label>Darbo patirtis (metais)</label>
+    <input type="number" id="darb8" placeholder="Įveskite darbo patirties metus" required>
+</div>
+<div class="input-field" id="darb5"  style="display: none" >
+    <label>Darbo pobūdis</label>
+    <select>
+        <option disabled id="darb9" selected>Pasirinkite darbo pobūdį</option>
+        <option>Vadovas</option>
+        <option>Specialistas</option>
+        <option>Individuali veikla</option>
+    </select>
+</div>
+<div class="input-field" id="darb6"  style="display: none" >
+    <label>Darbo sritis</label>
+    <select>
+        <option disabled id="darb10" selected>Pasirinkite darbo sritį</option>
+        <option>Teisė</option>
+        <option>Viešasis sektorius</option>
+        <option>Sveikatos apsauga</option>
+        <option>Farmacija</option>
+        <option>Pramonė/Gamyba</option>
+        <option>Informacinės technologijos</option>
+        <option>Prekyba</option>
+        <option>Krašto apsauga</option>
+        <option>Vidaus reikalų sistema</option>
+        <option>Klientų aptarnavimas ir paslaugos</option>
+        <option>Transportas</option>
+        <option>Kultūra ir pramogos</option>
+        <option>Švietimas/Studijos</option>
+    </select>
+</div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit" onclick="saugoti()">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > </script> 
+    <script src="script.js"></script>
+</body>
+</html>
